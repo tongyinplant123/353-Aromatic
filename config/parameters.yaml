@@ -1,0 +1,68 @@
+# Analysis Parameters
+# This file contains all configurable parameters for the phylogenomic analysis pipeline
+
+# Data paths
+data:
+  input_dir: "data/sequences"
+  output_dir: "results"
+  alignments_dir: "data/alignments"
+  gene_trees_dir: "data/gene_trees"
+  
+# Input file
+input:
+  list_file: "config/input_list.txt"
+  format: "tab"  # tab-separated: species gene sequence_file [paralog]
+
+# Paralog handling strategy
+# Options: "single_copy", "most_similar", "all", "orthology_inference"
+paralog_strategy: "single_copy"
+
+# Alignment parameters
+alignment:
+  tool: "mafft"  # mafft or muscle
+  algorithm: "auto"  # for MAFFT: auto, linsi, einsi, ginsi
+  trim: true
+  trim_tool: "trimal"  # trimal or trimal
+  trim_method: "automated1"
+
+# Gene tree inference parameters
+gene_tree:
+  model_selection: "auto"  # auto or specific model like "GTR+I+G"
+  bootstrap_replicates: 1000
+  ufboot_replicates: 1000
+  sh_alrt: true
+  threads: 8
+
+# Concatenation analysis parameters
+concatenation:
+  partition_file: "results/concatenation/partitions.nex"
+  partition_model: "UNLINKED"  # linked or unlinked
+  analysis:
+    tool: "iqtree"  # iqtree or raxml-ng
+    model: "MFP+MERGE"  # ModelFinder + merge
+    bootstrap: 1000
+    ufboot: 1000
+    sh_alrt: true
+    threads: 16
+
+# Coalescent analysis parameters
+coalescent:
+  tool: "astral"  # astral or mp_est
+  gene_tree_format: "newick"
+  support_calculation: "local_posterior"  # quartet or local_posterior
+  threads: 8
+
+# Result visualization
+visualization:
+  format: "pdf"  # pdf, png, svg
+  dpi: 300
+  show_support: true
+  support_threshold: 70
+  root_tree: true
+  outgroup: "Cycas_revoluta"
+
+# Quality control
+quality_control:
+  min_alignment_length: 100
+  max_gap_threshold: 0.5
+  min_species_per_gene: 0.8

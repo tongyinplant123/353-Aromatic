@@ -1,0 +1,52 @@
+# .gitignore for 353-aromatic Phylogenomics Pipeline
+
+# Data files (usually large and sensitive)
+data/
+*.fasta
+*.fa
+*.fastq
+*.bam
+*.sam
+
+# Results (can be regenerated)
+results/
+*.treefile
+*.newick
+*.pdf
+*.png
+*.svg
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large files
+*.zip
+*.tar
+*.gz
+
+# Output from analysis
+*.mfa
+*.phy
+*.nex
+
+# Environment
+venv/
+env/
+.venv/

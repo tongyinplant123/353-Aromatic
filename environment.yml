@@ -1,0 +1,25 @@
+name: phylo353
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - biopython
+  - pyyaml
+  - tqdm
+  - iq-tree
+  - mafft
+  - trimal
+  - astral
+  - raxml-ng
+  - matplotlib
+  - seaborn
+  - scipy
+  - scikit-learn
+  - pip
+  - pip:
+    - ete3
+    - dendropy

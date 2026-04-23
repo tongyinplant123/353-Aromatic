@@ -1,0 +1,51 @@
+# Actual input list used for 353 phylogenomics analysis
+# Updated: 2026-04-23
+# Species: 44 aromatic plants + 2 outgroups
+# Source: HybSuite pipeline results
+
+# Format: species_name    SRA/DRR_id    role
+# role: Outgroup or empty (ingroup)
+
+Cycas_revoluta	SRR23279596	Outgroup
+Ginkgo_biloba	DRR838493	Outgroup
+Amborella_trichopoda	SRR28891020
+Nymphaea_colorata	SRR10198679
+Piper_nigrum	SRR3404389
+Houpoea_obovata	SRR21722121
+Chimonanthus_praecox	SRR29777566
+Cinnamomum_burmanni	SRR34401849
+Camphora_officinarum	SRR32321439
+Vanilla_planifolia	SRR19374404
+Dendrobium_catenatum	SRR29497648
+Zingiber_officinale	SRR34090907
+Curcuma_longa	SRR29248952
+Cymbopogon_citratus	SRR16092813
+Crocus_sativus	SRR29649976
+Lilium_sargentiae	SRR30037331
+Nelumbo_nucifera	SRR35135260
+Paeonia_ludlowii	SRR18427093
+Hamamelis_virginiana	SRR11362623
+Rosa_chinensis	SRR33451946
+Rosa_rugosa	SRR29092669
+Prunus_mume	DRR729363
+Styphnolobium_japonicum	SRR28817707
+Leucaena_leucocephala	SRR27638056
+Citrus_reticulata	SRR33931469
+Matthiola_incana	SRR21682376
+Aquilaria_sinensis	DRR804867
+Dianthus_caryophyllus	SRR31831710
+Camellia_sinensis	SRR34853587
+Rhododendron_ovatum	SRR12917123
+Coffea_arabica	DRR851165
+Gardenia_jasminoides	SRR35135252
+Syringa_oblata	SRR26425440
+Osmanthus_fragrans	SRR28353135
+Jasminum_sambac	SRR13493618
+Mentha_longifolia	SRR30807427
+Thymus_quinquecostatus	SRR21700028
+Pogostemon_cablin	SRR32340876
+Origanum_vulgare	SRR16944736
+Rosmarinus_officinalis	SRR22104175
+Chrysanthemum_lavandulifolium	SRR24201647
+Lonicera_japonica	SRR27294530
+Coriandrum_sativum	SRR28637151
