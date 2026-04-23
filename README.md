@@ -1,4 +1,4 @@
-# 353 Aromatic Plants Phylogenomics Project
+# Aromatic Plants Phylogenomics Project
 
 ## Project Overview
 
